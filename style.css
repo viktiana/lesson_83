@@ -80,6 +80,26 @@ body {
     transform: translateY(300px);
 }
 
+.welcome-message-text {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: var(--white-color);
+    text-align: left;
+    margin-left: 200px;
+    transform: translateY(300px);
+    width: 400px;
+    text-align: center;
+}
+
+.welcome-message-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 700px;
+    align-items: center;
+}
+
 .div-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,4 +203,75 @@ body {
 .form-agree a {
     color: var(--grey-color);
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .header-nav-list {
+        gap: 15px;
+    }
+
+    .header-nav a {
+        font-size: 14px;
+    }
+
+    .div-main {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .welcome-message {
+        margin-left: 0;
+        transform: none;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .welcome-message-text {
+        margin-left: 0;
+        transform: none;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .welcome-message-text-container {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .registration {
+        padding: 25px 20px;
+    }
+
+    .registration input[type="text"],
+    .registration input[type="email"],
+    .input-lastname {
+        height: 55px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .submit-button {
+        height: 60px;
+        font-size: 18px;
+    }
 }
